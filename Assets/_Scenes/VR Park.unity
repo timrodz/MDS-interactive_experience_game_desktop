@@ -1603,7 +1603,7 @@ Prefab:
     - target: {fileID: 224000013520483434, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.57261467
+      value: 0.5726148
       objectReference: {fileID: 0}
     - target: {fileID: 224000013520483434, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
@@ -1666,7 +1666,7 @@ Prefab:
     - target: {fileID: 114000011270828176, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_Size
-      value: 0.4273853
+      value: 0.42738524
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fddc5bab3af4b79408cbb5afdfb238cd, type: 2}
@@ -2309,6 +2309,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013601871256, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 225000011971669868, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0779a81de8ea66f4fa419f50901df80f, type: 2}
   m_IsPrefabParent: 0
@@ -2452,6 +2462,16 @@ Prefab:
     - target: {fileID: 224000010399597018, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013601871256, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 225000011971669868, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2662,7 +2682,7 @@ Prefab:
     - target: {fileID: 114000013601871256, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
       propertyPath: m_Value
-      value: 0.99999964
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000013601871256, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
