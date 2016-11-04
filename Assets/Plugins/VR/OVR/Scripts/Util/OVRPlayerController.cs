@@ -125,7 +125,7 @@ public class OVRPlayerController : MonoBehaviour
 
 	void OnEnable()
 	{
-		OVRManager.display.RecenteredPose += ResetOrientation;
+		// OVRManager.display.RecenteredPose += ResetOrientation;
 
 		if (CameraRig != null)
 		{
@@ -135,7 +135,7 @@ public class OVRPlayerController : MonoBehaviour
 
 	void OnDisable()
 	{
-		OVRManager.display.RecenteredPose -= ResetOrientation;
+		// OVRManager.display.RecenteredPose -= ResetOrientation;
 
 		if (CameraRig != null)
 		{
@@ -278,7 +278,7 @@ public class OVRPlayerController : MonoBehaviour
 		Vector3 euler = transform.rotation.eulerAngles;
 
 		bool curHatLeft = OVRInput.Get(OVRInput.Button.PrimaryShoulder);
-
+		
 		if (curHatLeft && !prevHatLeft)
 			euler.y -= RotationRatchet;
 
@@ -293,10 +293,17 @@ public class OVRPlayerController : MonoBehaviour
 
 		float rotateInfluence = SimulationRate * Time.deltaTime * RotationAmount * RotationScaleMultiplier;
 
-#if !UNITY_ANDROID || UNITY_EDITOR
+// #if !UNITY_ANDROID || UNITY_EDITOR
 		if (!SkipMouseRotation)
 			euler.y += Input.GetAxis("Mouse X") * rotateInfluence * 3.25f;
-#endif
+// #endif
+
+#region CAMERA_NONVR
+		Vector3 cameraEuler = CameraRig.transform.rotation.eulerAngles;
+		// Multiply by -1 so the rotation isn't inverted
+		cameraEuler.x += Input.GetAxis("Mouse Y") * rotateInfluence * -3.25f;
+		CameraRig.transform.rotation = Quaternion.Euler(cameraEuler);
+#endregion
 
 		moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
 

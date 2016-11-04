@@ -40,7 +40,7 @@ public class MenuManager : MonoBehaviour {
 			canvasGroups[i].alpha = 0;
 			canvasGroups[i].blocksRaycasts = false;
 
-		}
+		}	
 
 	}
 
@@ -53,12 +53,12 @@ public class MenuManager : MonoBehaviour {
 			return;
 
 		// Fade out the current canvas group upwards
-		StartCoroutine(UIAnimation.FadeOut(canvasGroups[currentCanvasIndex], 1));
-		iTween.MoveBy(canvasGroups[currentCanvasIndex].gameObject, iTween.Hash("y", 1, "speed", 1, "easeType", "easeInOutExpo"));
+		StartCoroutine(UIAnimation.FadeOut(canvasGroups[currentCanvasIndex], 0.5f));
+		iTween.MoveBy(canvasGroups[currentCanvasIndex].gameObject, iTween.Hash("y", 1, "speed", 1.1f, "easeType", "easeInOutExpo"));
 
 		currentCanvasIndex++;
 
-		StartCoroutine(FadeObjectIn(cv, 1, 0.3f));
+		StartCoroutine(FadeObjectIn(cv, 1, 0.2f));
 
 	}
 
@@ -70,12 +70,12 @@ public class MenuManager : MonoBehaviour {
 			return;
 
 		// Fade out the current canvas group downwards
-		StartCoroutine(UIAnimation.FadeOut(canvasGroups[currentCanvasIndex], 1));
-		iTween.MoveBy(canvasGroups[currentCanvasIndex].gameObject, iTween.Hash("y", -1, "speed", 1, "easeType", "easeInOutExpo"));
+		StartCoroutine(UIAnimation.FadeOut(canvasGroups[currentCanvasIndex], 0.5f));
+		iTween.MoveBy(canvasGroups[currentCanvasIndex].gameObject, iTween.Hash("y", -1, "speed", 1.1f, "easeType", "easeInOutExpo"));
 
 		currentCanvasIndex--;
 
-		StartCoroutine(FadeObjectIn(cv, -1, 0.3f));
+		StartCoroutine(FadeObjectIn(cv, -1, 0.2f));
 
 	}
 	
@@ -83,8 +83,8 @@ public class MenuManager : MonoBehaviour {
 
 		yield return new WaitForSeconds(timeToWait);
 		
-		StartCoroutine(UIAnimation.FadeIn(cv, 1));
-		iTween.MoveBy(cv.gameObject, iTween.Hash("y", moveAmount, "speed", 1, "easeType", "easeInOutCubic", "delay", 0.1f));
+		StartCoroutine(UIAnimation.FadeIn(cv, 0.5f));
+		iTween.MoveBy(cv.gameObject, iTween.Hash("y", moveAmount, "speed", 1.1f, "easeType", "easeInOutCubic", "delay", 0.1f));
 
 	}
 

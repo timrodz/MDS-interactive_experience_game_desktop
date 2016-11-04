@@ -101,29 +101,29 @@ public class OVRCameraRig : MonoBehaviour
 
 	private void Update()
 	{
-		EnsureGameObjectIntegrity();
+		// EnsureGameObjectIntegrity();
 		
 		if (!Application.isPlaying)
 			return;
 
-		UpdateAnchors();
+		// UpdateAnchors();
 
-#if UNITY_ANDROID && !UNITY_EDITOR
+// #if UNITY_ANDROID && !UNITY_EDITOR
 
-        if (!correctedTrackingSpace)
-        {
-            //HACK: Unity 5.1.1p3 double-counts the head model on Android. Subtract it off in the reference frame.
+//         if (!correctedTrackingSpace)
+//         {
+//             //HACK: Unity 5.1.1p3 double-counts the head model on Android. Subtract it off in the reference frame.
 
-            var headModel = new Vector3(0f, OVRManager.profile.eyeHeight - OVRManager.profile.neckHeight, OVRManager.profile.eyeDepth);
-            var eyePos = -headModel + centerEyeAnchor.localRotation * headModel;
+//             var headModel = new Vector3(0f, OVRManager.profile.eyeHeight - OVRManager.profile.neckHeight, OVRManager.profile.eyeDepth);
+//             var eyePos = -headModel + centerEyeAnchor.localRotation * headModel;
 
-            if ((eyePos - centerEyeAnchor.localPosition).magnitude > 0.01f)
-            {
-                trackingSpace.localPosition = trackingSpace.localPosition - 2f * (trackingSpace.localRotation * headModel);
-                correctedTrackingSpace = true;
-            }
-        }
-#endif
+//             if ((eyePos - centerEyeAnchor.localPosition).magnitude > 0.01f)
+//             {
+//                 trackingSpace.localPosition = trackingSpace.localPosition - 2f * (trackingSpace.localRotation * headModel);
+//                 correctedTrackingSpace = true;
+//             }
+//         }
+// #endif
 	}
 
 #endregion

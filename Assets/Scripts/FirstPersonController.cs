@@ -53,7 +53,7 @@ public class FirstPersonController : MonoBehaviour {
 		Camera.main.transform.localEulerAngles = Vector3.left * verticalLookRotation;
 
 		Vector3 moveDirection = new Vector3(inputX, 0, inputY).normalized;
-		Vector3 targetMoveAmount = moveDirection * walkSpeed;
+		Vector3 targetMoveAmount = moveDirection * (walkSpeed / 2);
 
 		// Smooth the movement
 		moveAmount = targetMoveAmount;
