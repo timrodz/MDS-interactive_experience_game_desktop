@@ -341,22 +341,19 @@ SphereCollider:
 --- !u!114 &251248770
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013403634102, guid: 4db6b77241bd74f4abca512dfed88ce2,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 251248767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf960227867044282d921171d2d7ac, type: 3}
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 3
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  pointer: {fileID: 0}
-  sortOrder: 0
 --- !u!114 &251248771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -577,7 +574,7 @@ Prefab:
     - target: {fileID: 114000011270828176, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_Size
-      value: 0.42738536
+      value: 0.42738533
       objectReference: {fileID: 0}
     - target: {fileID: 114000011489947244, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
@@ -610,12 +607,12 @@ Prefab:
     - target: {fileID: 224000010448613626, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224000010654009618, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224000013312128602, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
@@ -630,17 +627,32 @@ Prefab:
     - target: {fileID: 224000011202910558, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000011452645692, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 225000012310940550, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225000012310940550, guid: fddc5bab3af4b79408cbb5afdfb238cd,
+        type: 2}
+      propertyPath: m_Interactable
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011270828176, guid: fddc5bab3af4b79408cbb5afdfb238cd,
+        type: 2}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012490888690, guid: fddc5bab3af4b79408cbb5afdfb238cd,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -199.99994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fddc5bab3af4b79408cbb5afdfb238cd, type: 2}
@@ -977,22 +989,19 @@ SphereCollider:
 --- !u!114 &875366069
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000013403634102, guid: 4db6b77241bd74f4abca512dfed88ce2,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 875366067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf960227867044282d921171d2d7ac, type: 3}
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 3
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  pointer: {fileID: 0}
-  sortOrder: 0
 --- !u!114 &875366070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,7 +1276,7 @@ Prefab:
     - target: {fileID: 225000012310940550, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_Alpha
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010082209810, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
@@ -1284,6 +1293,11 @@ Prefab:
       propertyPath: m_RaycastTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 225000012310940550, guid: fddc5bab3af4b79408cbb5afdfb238cd,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fddc5bab3af4b79408cbb5afdfb238cd, type: 2}
   m_IsPrefabParent: 0
@@ -1298,9 +1312,8 @@ GameObject:
   - 224: {fileID: 1706497159}
   - 223: {fileID: 1190571227}
   - 114: {fileID: 1190571226}
-  - 114: {fileID: 1190571225}
-  - 135: {fileID: 1190571224}
   - 114: {fileID: 1190571228}
+  - 135: {fileID: 1190571224}
   m_Layer: 5
   m_Name: Dialogue Box
   m_TagString: dialogueBox
@@ -1321,25 +1334,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1000
   m_Center: {x: 0, y: -220, z: 0}
---- !u!114 &1190571225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000012474309308, guid: 4db6b77241bd74f4abca512dfed88ce2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1190571223}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf960227867044282d921171d2d7ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 3
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  pointer: {fileID: 0}
-  sortOrder: 0
 --- !u!114 &1190571226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1624,12 +1618,12 @@ Prefab:
     - target: {fileID: 114000011270828176, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_Value
-      value: 0.99999994
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 225000012310940550, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
       propertyPath: m_Alpha
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000011489947244, guid: fddc5bab3af4b79408cbb5afdfb238cd,
         type: 2}
@@ -1658,6 +1652,21 @@ Prefab:
         be legally insane.\u201D\n\n\u201CIn the real world, only 1 percent of criminal
         cases plead not guilty by reason of insanity, and only 20 percent of those
         1 percent are successful.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 225000012310940550, guid: fddc5bab3af4b79408cbb5afdfb238cd,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012490888690, guid: fddc5bab3af4b79408cbb5afdfb238cd,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -200.00003
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011270828176, guid: fddc5bab3af4b79408cbb5afdfb238cd,
+        type: 2}
+      propertyPath: m_Size
+      value: 0.4273853
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fddc5bab3af4b79408cbb5afdfb238cd, type: 2}
@@ -2000,7 +2009,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.705
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2008,23 +2017,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -6.89
+      value: -19.75
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.927609
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.37355265
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_RootOrder
@@ -2032,7 +2041,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012412553580, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 136.18901
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010694444690, guid: c8e94fb43b3f9dc4e8fb55283c61c2eb,
         type: 2}
@@ -2248,12 +2257,12 @@ Prefab:
     - target: {fileID: 224000010399597018, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224000010704228608, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114000011722784016, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
@@ -2288,7 +2297,17 @@ Prefab:
     - target: {fileID: 224000011413298548, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 225000011971669868, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011881038388, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0779a81de8ea66f4fa419f50901df80f, type: 2}
@@ -2409,6 +2428,31 @@ Prefab:
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 225000011971669868, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011881038388, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011413298548, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010704228608, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010399597018, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0779a81de8ea66f4fa419f50901df80f, type: 2}
@@ -2628,7 +2672,7 @@ Prefab:
     - target: {fileID: 225000011971669868, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
       propertyPath: m_Alpha
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000010955276348, guid: 0779a81de8ea66f4fa419f50901df80f,
         type: 2}
@@ -2673,6 +2717,11 @@ Prefab:
         started seeing: everywhere I looked, everywhere I looked, all these people,
         everywhere I looked, doing the exact same thing... over and over and over
         and over again thinking this time, it's gonna be different.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 225000011971669868, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0779a81de8ea66f4fa419f50901df80f, type: 2}
