@@ -1752,7 +1752,7 @@ public static class OVRInput
 		{
 			controllerType = Controller.Gamepad;
 
-			initialized = OVR_GamepadController_Initialize();
+//			initialized = OVR_GamepadController_Initialize();
 		}
 
 		~OVRControllerGamepadDesktop()
@@ -1760,7 +1760,7 @@ public static class OVRInput
 			if (!initialized)
 				return;
 
-			OVR_GamepadController_Destroy();
+//			OVR_GamepadController_Destroy();
 		}
 
 		private bool ShouldUpdate()
@@ -1795,46 +1795,46 @@ public static class OVRInput
 
 			OVRPlugin.ControllerState state = new OVRPlugin.ControllerState();
 
-			bool result = OVR_GamepadController_Update();
+//			bool result = OVR_GamepadController_Update();
 
-			if (result)
-				state.ConnectedControllers = (uint)Controller.Gamepad;
+//			if (result)
+//				state.ConnectedControllers = (uint)Controller.Gamepad;
 
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.A))
-				state.Buttons |= (uint)RawButton.A;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.B))
-				state.Buttons |= (uint)RawButton.B;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.X))
-				state.Buttons |= (uint)RawButton.X;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.Y))
-				state.Buttons |= (uint)RawButton.Y;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.Up))
-				state.Buttons |= (uint)RawButton.DpadUp;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.Down))
-				state.Buttons |= (uint)RawButton.DpadDown;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.Left))
-				state.Buttons |= (uint)RawButton.DpadLeft;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.Right))
-				state.Buttons |= (uint)RawButton.DpadRight;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.Start))
-				state.Buttons |= (uint)RawButton.Start;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.Back))
-				state.Buttons |= (uint)RawButton.Back;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.LStick))
-				state.Buttons |= (uint)RawButton.LThumbstick;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.RStick))
-				state.Buttons |= (uint)RawButton.RThumbstick;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.LeftShoulder))
-				state.Buttons |= (uint)RawButton.LShoulder;
-			if (OVR_GamepadController_GetButton((int)ButtonGPC.RightShoulder))
-				state.Buttons |= (uint)RawButton.RShoulder;
-
-			state.LThumbstick.x = OVR_GamepadController_GetAxis((int)AxisGPC.LeftXAxis);
-			state.LThumbstick.y = OVR_GamepadController_GetAxis((int)AxisGPC.LeftYAxis);
-			state.RThumbstick.x = OVR_GamepadController_GetAxis((int)AxisGPC.RightXAxis);
-			state.RThumbstick.y = OVR_GamepadController_GetAxis((int)AxisGPC.RightYAxis);
-			state.LIndexTrigger = OVR_GamepadController_GetAxis((int)AxisGPC.LeftTrigger);
-			state.RIndexTrigger = OVR_GamepadController_GetAxis((int)AxisGPC.RightTrigger);
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.A))
+//				state.Buttons |= (uint)RawButton.A;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.B))
+//				state.Buttons |= (uint)RawButton.B;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.X))
+//				state.Buttons |= (uint)RawButton.X;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.Y))
+//				state.Buttons |= (uint)RawButton.Y;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.Up))
+//				state.Buttons |= (uint)RawButton.DpadUp;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.Down))
+//				state.Buttons |= (uint)RawButton.DpadDown;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.Left))
+//				state.Buttons |= (uint)RawButton.DpadLeft;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.Right))
+//				state.Buttons |= (uint)RawButton.DpadRight;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.Start))
+//				state.Buttons |= (uint)RawButton.Start;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.Back))
+//				state.Buttons |= (uint)RawButton.Back;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.LStick))
+//				state.Buttons |= (uint)RawButton.LThumbstick;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.RStick))
+//				state.Buttons |= (uint)RawButton.RThumbstick;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.LeftShoulder))
+//				state.Buttons |= (uint)RawButton.LShoulder;
+//			if (OVR_GamepadController_GetButton((int)ButtonGPC.RightShoulder))
+//				state.Buttons |= (uint)RawButton.RShoulder;
+//
+//			state.LThumbstick.x = OVR_GamepadController_GetAxis((int)AxisGPC.LeftXAxis);
+//			state.LThumbstick.y = OVR_GamepadController_GetAxis((int)AxisGPC.LeftYAxis);
+//			state.RThumbstick.x = OVR_GamepadController_GetAxis((int)AxisGPC.RightXAxis);
+//			state.RThumbstick.y = OVR_GamepadController_GetAxis((int)AxisGPC.RightYAxis);
+//			state.LIndexTrigger = OVR_GamepadController_GetAxis((int)AxisGPC.LeftTrigger);
+//			state.RIndexTrigger = OVR_GamepadController_GetAxis((int)AxisGPC.RightTrigger);
 
 			if (state.LIndexTrigger >= AXIS_AS_BUTTON_THRESHOLD)
 				state.Buttons |= (uint)RawButton.LIndexTrigger;
@@ -1949,23 +1949,23 @@ public static class OVRInput
 			float gpcFrequency = frequency * 200.0f; //Map frequency from 0-1 CAPI range to 0-200 GPC range
 			float gpcStrength = amplitude;
 
-			OVR_GamepadController_SetVibration(gpcNode, gpcStrength, gpcFrequency);
+//			OVR_GamepadController_SetVibration(gpcNode, gpcStrength, gpcFrequency);
 		}
 
-		private const string DllName = "OVRGamepad";
+//		private const string DllName = "OVRGamepad";
 
-		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-		private static extern bool OVR_GamepadController_Initialize();
-		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-		private static extern bool OVR_GamepadController_Destroy();
-		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-		private static extern bool OVR_GamepadController_Update();
-		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-		private static extern float OVR_GamepadController_GetAxis(int axis);
-		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-		private static extern bool OVR_GamepadController_GetButton(int button);
-		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
-		private static extern bool OVR_GamepadController_SetVibration(int node, float strength, float frequency);
+//		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+//		private static extern bool OVR_GamepadController_Initialize();
+//		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+//		private static extern bool OVR_GamepadController_Destroy();
+//		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+//		private static extern bool OVR_GamepadController_Update();
+//		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+//		private static extern float OVR_GamepadController_GetAxis(int axis);
+//		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+//		private static extern bool OVR_GamepadController_GetButton(int button);
+//		[DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+//		private static extern bool OVR_GamepadController_SetVibration(int node, float strength, float frequency);
 	}
 
 	private class OVRControllerGamepadAndroid : OVRControllerBase
