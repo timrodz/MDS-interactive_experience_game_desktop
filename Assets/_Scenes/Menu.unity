@@ -2697,7 +2697,7 @@ MonoBehaviour:
 
 
     Games should provide help to patients in a way that helps defeat misconceptions
-    about the victims of any mental illnesses, the benefits being such as inclusion
+    about the victims of any mental illnesses, and promote benefits such as inclusion
     to society, increased willingness to seek treatment and an improved professional
     life.'
 --- !u!222 &1516832975
@@ -3418,13 +3418,10 @@ Prefab:
     - target: {fileID: 114000011688390690, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
         type: 2}
       propertyPath: m_Text
-      value: 'Welcome to A Walk In The Park, a virtual reality experience where you
-        dialogue with characters who suffer from mental illnesses and their human
-        equivalents.
-
-
-        This game was made as the product of research on mental illnesses in video
-        games and the ways they''re portrayed in them.'
+      value: "Welcome to A Walk In The Park, an experience where you can interact
+        with both video game characters and real people who suffer from mental illnesses.\r\n\r\nThis
+        game was made as the product of research on how mental illnesses are portrayed
+        in video games.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114000011688390690, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
         type: 2}

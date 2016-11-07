@@ -1351,10 +1351,7 @@ MonoBehaviour:
   m_Text: 'Move using the WASD keys
 
 
-    Pan the camera with your mouse
-
-
-    Press ESC/ESCAPE for options
+    Press Escape for the options
 
 
     Enjoy the game!'
@@ -1468,6 +1465,26 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: a1734c4b4c4f7c94aae72056265abda8,
         type: 3}
+    - target: {fileID: 114000011820573794, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Text
+      value: "I am often described as a psychotic homicidal maniac. My violence is
+        often blamed on my schizophrenia that can put me out of touch with reality.\n\r\nNormally
+        someone who is \u2018psychotic\u2019 is experiencing symptoms of psychosis,
+        a mental disorder, which can include auditory hallucinations, such as hearing
+        voices; visual hallucinations, where they see objects that are not truly there."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011017001266, guid: 0779a81de8ea66f4fa419f50901df80f,
+        type: 2}
+      propertyPath: m_Text
+      value: "But I don\u2019t hear voices, I don\u2019t have trouble telling what\u2019s
+        real from what isn\u2019t, I don\u2019t feel that the people I\u2019m hurting
+        somehow deserve it, I just think it's funny!\n\r\nI may commit crimes for
+        reasons that don\u2019t make sense to you, but I know full well that the things
+        I\u2019m doing are real, and are seen as \u2018wrong\u2019 by society. I have
+        plenty of motivation and get a lot of enjoyment from concocting complicated
+        schemes to wreak havoc on society."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0779a81de8ea66f4fa419f50901df80f, type: 2}
   m_IsPrefabParent: 0
@@ -2948,7 +2965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260efd273b99c7d43b42454566201d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutTime: 7
+  fadeOutTime: 5
 --- !u!225 &1129075970
 CanvasGroup:
   m_ObjectHideFlags: 0
