@@ -1471,6 +1471,26 @@ Prefab:
       propertyPath: m_Text
       value: introduction
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013449909112, guid: c7aca483ec5194cbdbbcd14a909c805a,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013449909112, guid: c7aca483ec5194cbdbbcd14a909c805a,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012088687230, guid: c7aca483ec5194cbdbbcd14a909c805a,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012088687230, guid: c7aca483ec5194cbdbbcd14a909c805a,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7aca483ec5194cbdbbcd14a909c805a, type: 2}
   m_IsPrefabParent: 0
@@ -3353,17 +3373,17 @@ Prefab:
     - target: {fileID: 224000011065414194, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 154
+      value: 163
       objectReference: {fileID: 0}
     - target: {fileID: 224000011065414194, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -40
+      value: 749
       objectReference: {fileID: 0}
     - target: {fileID: 224000011065414194, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -40
+      value: 387
       objectReference: {fileID: 0}
     - target: {fileID: 224000011065414194, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
         type: 2}
@@ -3403,8 +3423,33 @@ Prefab:
         equivalents.
 
 
-        In order to interact with any button, simply look at them and wait until the
-        emerging bar around them finishes loading. Try it now with the button below!'
+        This game was made as the product of research on mental illnesses in video
+        games and the ways they''re portrayed in them.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011688390690, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011688390690, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
+        type: 2}
+      propertyPath: m_FontData.m_MaxSize
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011065414194, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011065414194, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011688390690, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76,
+        type: 2}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d61316ce09a6b4d7eadb4c7e5dfa2f76, type: 2}
@@ -3823,6 +3868,26 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013097715142, guid: 7f50c41550554407491b1b31e22167f0,
+        type: 2}
+      propertyPath: m_Text
+      value: continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013097715142, guid: 7f50c41550554407491b1b31e22167f0,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010349902306, guid: 7f50c41550554407491b1b31e22167f0,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010349902306, guid: 7f50c41550554407491b1b31e22167f0,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f50c41550554407491b1b31e22167f0, type: 2}

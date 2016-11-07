@@ -107,12 +107,15 @@ public class MenuManager : MonoBehaviour {
 	
 	public void LoadScene() {
 
-		Invoke("LoadSceneDelayed", fadeColorAnimationClip.length * 0.5f);
+		Invoke("LoadSceneDelayed", fadeColorAnimationClip.length * 0.75f);
 
 		gameTitle.SetParent(gameTitle.parent.parent);
+
+		// move the title upwards
 		iTween.MoveBy(gameTitle.gameObject, iTween.Hash("y", 5, "speed", 2, "easeType", "easeInOutExpo", "loopType", "none"));
-		
-		if (canvasGroups[1].name == "Menu - Main (GameObject)")
+
+		// If on the main menu scene, move the group of the index 1, otherwise move the group at index 0
+		if (canvasGroups[1].name == "Menu - Main")
 			iTween.MoveBy(canvasGroups[1].gameObject, iTween.Hash("y", -5, "speed", 2, "easeType", "easeInOutExpo", "loopType", "none"));
 		else
 			iTween.MoveBy(canvasGroups[0].gameObject, iTween.Hash("y", -5, "speed", 2, "easeType", "easeInOutExpo", "loopType", "none"));

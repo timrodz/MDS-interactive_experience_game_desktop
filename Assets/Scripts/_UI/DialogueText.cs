@@ -1,58 +1,46 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogueText : MonoBehaviour {
 
 	/// <summary>
-	/// 
+	/// The text field
 	/// </summary>
-	public string[] text;
+	public Text textField;
 
-	/// <summary>
-	/// 
-	/// </summary>
 	public Text[] texts;
 
-	private Text textField;
-	private int textIndex = 0;
+	private int index = 0;
 
 	// Use this for initialization
 	void Start() {
-
-		// Initialize a list of texts
-		textField = this.GetComponentInChildren<Text>();
+		
 		textField.text = texts[0].text;
 
 	}
 
 	public void LoadNextText() {
 
-		if (textIndex + 1 >= text.Length)
+		if (index + 1 >= texts.Length)
 			return;
 
-		textIndex++;
+		index++;
 
-		AnimateText();
+		textField.text = texts[index].text;
+		EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
 
 	}
 
 	public void LoadPreviousText() {
 
-		if (textIndex - 1 < 0)
+		if (index - 1 < 0)
 			return;
 
-		textIndex--;
+		index--;
 
-		AnimateText();
-
-	}
-
-	private void AnimateText() {
-
-		//textField.GetComponent<CanvasGroup>().alpha = 0;
-		textField.text = texts[textIndex].text;
-		//StartCoroutine(UIAnimation.FadeIn(textField.GetComponentInChildren<CanvasGroup>(), 0.2f));
+		textField.text = texts[index].text;
+		EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
 
 	}
 

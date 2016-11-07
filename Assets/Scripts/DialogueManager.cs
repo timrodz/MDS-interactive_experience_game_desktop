@@ -5,7 +5,7 @@ using System.Collections.Generic;
 /// <summary>
 /// Shows the dialogue boxes
 /// </summary>
-public class DialogueInteraction : MonoBehaviour {
+public class DialogueManager : MonoBehaviour {
 
 	/// <summary>
 	/// The tag to check trigger collision with
@@ -129,9 +129,7 @@ public class DialogueInteraction : MonoBehaviour {
 
 			// Reset the variable states
 			StartCoroutine(UIAnimation.FadeOut(promptCanvasGroup, dialoguePromptFadeTime));
-			containers.Clear();
-			hasInteractedWithDialogue = false;
-			canInteractWithDialogue = false;
+			Invoke("ClearAfterExit", 1f);
 
 		}
 
@@ -147,6 +145,14 @@ public class DialogueInteraction : MonoBehaviour {
 			StartCoroutine(UIAnimation.FadeOut(child, 0.5f));
 
 		}
+
+	}
+
+	private void ClearAfterExit() {
+
+		containers.Clear();
+		hasInteractedWithDialogue = false;
+		canInteractWithDialogue = false;
 
 	}
 
