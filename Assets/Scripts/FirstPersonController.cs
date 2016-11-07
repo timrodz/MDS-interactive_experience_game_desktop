@@ -49,6 +49,8 @@ public class FirstPersonController : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 
+		Cursor.lockState = CursorLockMode.Confined;
+
 		if (controller.isGrounded) {
 
 			if (Input.GetKey(KeyCode.LeftShift)) {
