@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Menu.unity
   - enabled: 1
-    path: Assets/_Scenes/VR Park.unity
+    path: Assets/_Scenes/Park.unity
   - enabled: 1
     path: Assets/_Scenes/Menu (NO TUTORIAL).unity
